@@ -1,4 +1,4 @@
-import "./phaser.js";
+import "../node_modules/phaser/dist/phaser.min.js";
 import Player from "./player.js";
 
 /**

@@ -1,4 +1,4 @@
-import "./phaser.js";
+import "../node_modules/phaser/dist/phaser.min.js";
 import Scene1 from "./scene1.js";
 
 const config = {
