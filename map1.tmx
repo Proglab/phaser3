@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="25" height="20" tilewidth="64" tileheight="64" infinite="0" nextlayerid="8" nextobjectid="21">
+<map version="1.2" tiledversion="1.2.4" orientation="orthogonal" renderorder="right-down" width="25" height="20" tilewidth="64" tileheight="64" infinite="0" nextlayerid="8" nextobjectid="25">
  <tileset firstgid="1" name="DungeonColor2@64x64" tilewidth="64" tileheight="64" tilecount="256" columns="16">
-  <image source="../pygame/_GAMES ASSETS/graphics/2dhandpainted_dungeontileset_windows/2dhandpainted_dungeontileset/Assets/64x64/DungeonColor2@64x64.png" width="1024" height="1024"/>
+  <image source="../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dhandpainted_dungeontileset_windows/2dhandpainted_dungeontileset/Assets/64x64/DungeonColor2@64x64.png" width="1024" height="1024"/>
   <tile id="0">
    <properties>
     <property name="collides" value="0"/>
@@ -1380,7 +1380,7 @@
 </data>
  </layer>
  <objectgroup id="7" name="Objects">
-  <object id="20" name="SpawnPoint" x="862.667" y="674.667">
+  <object id="20" name="SpawnPoint" x="830.667" y="909.333">
    <point/>
   </object>
  </objectgroup>

@@ -63,8 +63,8 @@
                  "type":"",
                  "visible":true,
                  "width":0,
-                 "x":862.666666666667,
-                 "y":674.666666666667
+                 "x":830.666666666667,
+                 "y":909.333333333333
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -73,7 +73,7 @@
          "y":0
         }],
  "nextlayerid":8,
- "nextobjectid":21,
+ "nextobjectid":25,
  "orientation":"orthogonal",
  "renderorder":"right-down",
  "tiledversion":"1.2.4",
@@ -82,7 +82,7 @@
         {
          "columns":16,
          "firstgid":1,
-         "image":"..\/..\/pygame\/_GAMES ASSETS\/graphics\/2dhandpainted_dungeontileset_windows\/2dhandpainted_dungeontileset\/Assets\/64x64\/DungeonColor2@64x64.png",
+         "image":"..\/..\/..\/..\/..\/wamp64\/www\/pygame\/_GAMES ASSETS\/graphics\/2dhandpainted_dungeontileset_windows\/2dhandpainted_dungeontileset\/Assets\/64x64\/DungeonColor2@64x64.png",
          "imageheight":1024,
          "imagewidth":1024,
          "margin":0,
