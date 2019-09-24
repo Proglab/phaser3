@@ -11,8 +11,7 @@ export default class PlatformerScene extends Phaser.Scene {
 
         this.load.tilemapTiledJSON('map1', './assets/tilemaps/map1.json');
 
-        this.load.atlas("atlas", "https://www.mikewesthad.com/phaser-3-tilemap-blog-posts/post-1/assets/atlas/atlas.png", "https://www.mikewesthad.com/phaser-3-tilemap-blog-posts/post-1/assets/atlas/atlas.json");
-
+        this.load.multiatlas('archer2', './persos/heroes/Archer2/anims.json', './persos/heroes/Archer2/anims/');
     }
 
     create() {

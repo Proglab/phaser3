@@ -56,7 +56,7 @@
         <key>jxrCompressionLevel</key>
         <uint>0</uint>
         <key>ditherType</key>
-        <enum type="SettingsBase::DitherType">NearestNeighbour</enum>
+        <enum type="SettingsBase::DitherType">PngQuantLow</enum>
         <key>backgroundColor</key>
         <uint>0</uint>
         <key>libGdx</key>
@@ -82,7 +82,7 @@
         <key>atfFormats</key>
         <string></string>
         <key>textureFormat</key>
-        <enum type="SettingsBase::TextureFormat">png</enum>
+        <enum type="SettingsBase::TextureFormat">png8</enum>
         <key>borderPadding</key>
         <uint>0</uint>
         <key>maxTextureSize</key>
@@ -108,7 +108,7 @@
             <key>sizeConstraints</key>
             <enum type="AlgorithmSettings::SizeConstraints">AnySize</enum>
             <key>forceSquared</key>
-            <false/>
+            <true/>
             <key>maxRects</key>
             <struct type="AlgorithmMaxRectsSettings">
                 <key>heuristic</key>
@@ -151,7 +151,7 @@
         <key>autoAliasEnabled</key>
         <false/>
         <key>trimSpriteNames</key>
-        <false/>
+        <true/>
         <key>prependSmartFolderName</key>
         <false/>
         <key>autodetectAnimations</key>
@@ -159,7 +159,7 @@
         <key>globalSpriteSettings</key>
         <struct type="SpriteSettings">
             <key>scale</key>
-            <double>1</double>
+            <double>0.333333</double>
             <key>scaleMode</key>
             <enum type="ScaleMode">Smooth</enum>
             <key>extrude</key>
@@ -177,193 +177,290 @@
             <key>defaultPivotPoint</key>
             <point_f>0.5,0.5</point_f>
             <key>writePivotPoints</key>
-            <false/>
+            <true/>
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Defending/Defending_000.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Defending/Defending_001.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Defending/Defending_002.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Defending/Defending_003.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Defending/Defending_004.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Defending/Defending_005.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Defending/Defending_006.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Defending/Defending_007.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Defending/Defending_008.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Defending/Defending_009.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Defending/Defending_010.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Defending/Defending_011.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Dying/Dying_000.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Dying/Dying_001.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Dying/Dying_002.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Dying/Dying_003.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Dying/Dying_004.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Dying/Dying_005.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Dying/Dying_006.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Dying/Dying_007.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Dying/Dying_008.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Dying/Dying_009.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Dying/Dying_010.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Dying/Dying_011.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Dying/Dying_012.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Dying/Dying_013.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Dying/Dying_014.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Falling Down/Falling Down_000.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Falling Down/Falling Down_001.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Falling Down/Falling Down_002.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Falling Down/Falling Down_003.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Falling Down/Falling Down_004.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Falling Down/Falling Down_005.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Hurt/Hurt_000.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Hurt/Hurt_001.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Hurt/Hurt_002.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Hurt/Hurt_003.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Hurt/Hurt_004.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Hurt/Hurt_005.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Hurt/Hurt_006.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Hurt/Hurt_007.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Hurt/Hurt_008.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Hurt/Hurt_009.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Hurt/Hurt_010.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Hurt/Hurt_011.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Idle/Idle_000.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Idle/Idle_001.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Idle/Idle_002.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Idle/Idle_003.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Idle/Idle_004.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Idle/Idle_005.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Idle/Idle_006.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Idle/Idle_007.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Idle/Idle_008.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Idle/Idle_009.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Idle/Idle_010.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Idle/Idle_011.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Jump Loop/Jump Loop_000.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Jump Loop/Jump Loop_001.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Jump Loop/Jump Loop_002.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Jump Loop/Jump Loop_003.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Jump Loop/Jump Loop_004.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Jump Loop/Jump Loop_005.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Jump Start/Jump Start_000.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Jump Start/Jump Start_001.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Jump Start/Jump Start_002.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Jump Start/Jump Start_003.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Jump Start/Jump Start_004.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Jump Start/Jump Start_005.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Run Shooting/Run Shooting_000.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Run Shooting/Run Shooting_001.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Run Shooting/Run Shooting_002.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Run Shooting/Run Shooting_003.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Run Shooting/Run Shooting_004.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Run Shooting/Run Shooting_005.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Run Shooting/Run Shooting_006.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Run Shooting/Run Shooting_007.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Run Shooting/Run Shooting_008.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Run Shooting/Run Shooting_009.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Run Shooting/Run Shooting_010.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Run Shooting/Run Shooting_011.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Run Shooting/Run Shooting_012.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Run Shooting/Run Shooting_013.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Run Shooting/Run Shooting_014.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Running/Running_000.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Running/Running_001.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Running/Running_002.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Running/Running_003.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Running/Running_004.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Running/Running_005.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Running/Running_006.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Running/Running_007.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Running/Running_008.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Running/Running_009.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Running/Running_010.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Running/Running_011.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Running/Running_012.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Running/Running_013.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Running/Running_014.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Shooting in The Air/Shooting in The Air_000.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Shooting in The Air/Shooting in The Air_001.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Shooting in The Air/Shooting in The Air_002.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Shooting in The Air/Shooting in The Air_003.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Shooting in The Air/Shooting in The Air_004.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Shooting in The Air/Shooting in The Air_005.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Shooting in The Air/Shooting in The Air_006.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Shooting in The Air/Shooting in The Air_007.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Shooting in The Air/Shooting in The Air_008.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Shooting in The Air/Shooting in The Air_009.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Shooting/Shooting_000.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Shooting/Shooting_001.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Shooting/Shooting_002.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Shooting/Shooting_003.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Shooting/Shooting_004.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Shooting/Shooting_005.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Shooting/Shooting_006.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Shooting/Shooting_007.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Shooting/Shooting_008.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Shooting/Shooting_009.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Sliding/Sliding_000.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Sliding/Sliding_001.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Sliding/Sliding_002.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Sliding/Sliding_003.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Sliding/Sliding_004.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Sliding/Sliding_005.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Taunt/Taunt_000.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Taunt/Taunt_001.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Taunt/Taunt_002.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Taunt/Taunt_003.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Taunt/Taunt_004.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Taunt/Taunt_005.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Taunt/Taunt_006.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Taunt/Taunt_007.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Taunt/Taunt_008.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Taunt/Taunt_009.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Taunt/Taunt_010.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Taunt/Taunt_011.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Taunt/Taunt_012.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Taunt/Taunt_013.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Taunt/Taunt_014.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Taunt/Taunt_015.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Taunt/Taunt_016.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Taunt/Taunt_017.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_000.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_001.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_002.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_003.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_004.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_005.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_006.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_007.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_008.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_009.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_010.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_011.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_012.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_013.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_014.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_015.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_016.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_017.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_018.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_019.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_020.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_021.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_022.png</key>
-            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences/Walking/Walking_023.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Hurt/Back - Hurt_000.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Hurt/Back - Hurt_001.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Hurt/Back - Hurt_002.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Hurt/Back - Hurt_003.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Hurt/Back - Hurt_004.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Hurt/Back - Hurt_005.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Hurt/Back - Hurt_006.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Hurt/Back - Hurt_007.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Hurt/Back - Hurt_008.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Hurt/Back - Hurt_009.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Hurt/Back - Hurt_010.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Hurt/Back - Hurt_011.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Idle/Back - Idle_000.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Idle/Back - Idle_001.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Idle/Back - Idle_002.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Idle/Back - Idle_003.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Idle/Back - Idle_004.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Idle/Back - Idle_005.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Idle/Back - Idle_006.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Idle/Back - Idle_007.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Idle/Back - Idle_008.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Idle/Back - Idle_009.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Idle/Back - Idle_010.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Idle/Back - Idle_011.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Slashing/Back - Slashing_000.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Slashing/Back - Slashing_001.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Slashing/Back - Slashing_002.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Slashing/Back - Slashing_003.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Slashing/Back - Slashing_004.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Slashing/Back - Slashing_005.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Slashing/Back - Slashing_006.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Slashing/Back - Slashing_007.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Slashing/Back - Slashing_008.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Slashing/Back - Slashing_009.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Slashing/Back - Slashing_010.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Slashing/Back - Slashing_011.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Walking/Back - Walking_000.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Walking/Back - Walking_001.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Walking/Back - Walking_002.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Walking/Back - Walking_003.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Walking/Back - Walking_004.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Walking/Back - Walking_005.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Walking/Back - Walking_006.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Walking/Back - Walking_007.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Walking/Back - Walking_008.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Walking/Back - Walking_009.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Walking/Back - Walking_010.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Walking/Back - Walking_011.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Walking/Back - Walking_012.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Walking/Back - Walking_013.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Walking/Back - Walking_014.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Walking/Back - Walking_015.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Walking/Back - Walking_016.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Back - Walking/Back - Walking_017.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Dying/Dying_000.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Dying/Dying_001.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Dying/Dying_002.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Dying/Dying_003.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Dying/Dying_004.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Dying/Dying_005.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Dying/Dying_006.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Dying/Dying_007.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Dying/Dying_008.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Dying/Dying_009.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Dying/Dying_010.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Dying/Dying_011.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Hurt/Front - Hurt_000.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Hurt/Front - Hurt_001.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Hurt/Front - Hurt_002.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Hurt/Front - Hurt_003.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Hurt/Front - Hurt_004.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Hurt/Front - Hurt_005.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Hurt/Front - Hurt_006.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Hurt/Front - Hurt_007.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Hurt/Front - Hurt_008.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Hurt/Front - Hurt_009.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Hurt/Front - Hurt_010.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Hurt/Front - Hurt_011.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle Blinking/Front - Idle Blinking_000.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle Blinking/Front - Idle Blinking_001.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle Blinking/Front - Idle Blinking_002.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle Blinking/Front - Idle Blinking_003.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle Blinking/Front - Idle Blinking_004.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle Blinking/Front - Idle Blinking_005.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle Blinking/Front - Idle Blinking_006.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle Blinking/Front - Idle Blinking_007.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle Blinking/Front - Idle Blinking_008.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle Blinking/Front - Idle Blinking_009.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle Blinking/Front - Idle Blinking_010.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle Blinking/Front - Idle Blinking_011.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle/Front - Idle_000.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle/Front - Idle_001.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle/Front - Idle_002.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle/Front - Idle_003.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle/Front - Idle_004.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle/Front - Idle_005.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle/Front - Idle_006.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle/Front - Idle_007.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle/Front - Idle_008.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle/Front - Idle_009.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle/Front - Idle_010.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Idle/Front - Idle_011.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Slashing/Front - Slashing_000.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Slashing/Front - Slashing_001.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Slashing/Front - Slashing_002.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Slashing/Front - Slashing_003.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Slashing/Front - Slashing_004.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Slashing/Front - Slashing_005.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Slashing/Front - Slashing_006.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Slashing/Front - Slashing_007.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Slashing/Front - Slashing_008.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Slashing/Front - Slashing_009.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Slashing/Front - Slashing_010.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Slashing/Front - Slashing_011.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Walking/Front - Walking_000.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Walking/Front - Walking_001.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Walking/Front - Walking_002.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Walking/Front - Walking_003.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Walking/Front - Walking_004.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Walking/Front - Walking_005.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Walking/Front - Walking_006.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Walking/Front - Walking_007.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Walking/Front - Walking_008.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Walking/Front - Walking_009.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Walking/Front - Walking_010.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Walking/Front - Walking_011.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Walking/Front - Walking_012.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Walking/Front - Walking_013.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Walking/Front - Walking_014.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Walking/Front - Walking_015.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Walking/Front - Walking_016.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Front - Walking/Front - Walking_017.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Hurt/Left - Hurt_000.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Hurt/Left - Hurt_001.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Hurt/Left - Hurt_002.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Hurt/Left - Hurt_003.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Hurt/Left - Hurt_004.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Hurt/Left - Hurt_005.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Hurt/Left - Hurt_006.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Hurt/Left - Hurt_007.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Hurt/Left - Hurt_008.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Hurt/Left - Hurt_009.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Hurt/Left - Hurt_010.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Hurt/Left - Hurt_011.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle Blinking/Left - Idle Blinking_000.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle Blinking/Left - Idle Blinking_001.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle Blinking/Left - Idle Blinking_002.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle Blinking/Left - Idle Blinking_003.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle Blinking/Left - Idle Blinking_004.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle Blinking/Left - Idle Blinking_005.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle Blinking/Left - Idle Blinking_006.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle Blinking/Left - Idle Blinking_007.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle Blinking/Left - Idle Blinking_008.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle Blinking/Left - Idle Blinking_009.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle Blinking/Left - Idle Blinking_010.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle Blinking/Left - Idle Blinking_011.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle/Left - Idle_000.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle/Left - Idle_001.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle/Left - Idle_002.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle/Left - Idle_003.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle/Left - Idle_004.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle/Left - Idle_005.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle/Left - Idle_006.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle/Left - Idle_007.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle/Left - Idle_008.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle/Left - Idle_009.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle/Left - Idle_010.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Idle/Left - Idle_011.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Slashing/Left - Slashing_000.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Slashing/Left - Slashing_001.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Slashing/Left - Slashing_002.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Slashing/Left - Slashing_003.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Slashing/Left - Slashing_004.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Slashing/Left - Slashing_005.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Slashing/Left - Slashing_006.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Slashing/Left - Slashing_007.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Slashing/Left - Slashing_008.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Slashing/Left - Slashing_009.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Slashing/Left - Slashing_010.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Slashing/Left - Slashing_011.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Walking/Left - Walking_000.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Walking/Left - Walking_001.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Walking/Left - Walking_002.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Walking/Left - Walking_003.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Walking/Left - Walking_004.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Walking/Left - Walking_005.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Walking/Left - Walking_006.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Walking/Left - Walking_007.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Walking/Left - Walking_008.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Walking/Left - Walking_009.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Walking/Left - Walking_010.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Walking/Left - Walking_011.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Walking/Left - Walking_012.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Walking/Left - Walking_013.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Walking/Left - Walking_014.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Walking/Left - Walking_015.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Walking/Left - Walking_016.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Left - Walking/Left - Walking_017.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Hurt/Right - Hurt_000.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Hurt/Right - Hurt_001.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Hurt/Right - Hurt_002.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Hurt/Right - Hurt_003.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Hurt/Right - Hurt_004.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Hurt/Right - Hurt_005.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Hurt/Right - Hurt_006.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Hurt/Right - Hurt_007.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Hurt/Right - Hurt_008.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Hurt/Right - Hurt_009.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Hurt/Right - Hurt_010.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Hurt/Right - Hurt_011.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle Blinking/Right - Idle Blinking_000.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle Blinking/Right - Idle Blinking_001.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle Blinking/Right - Idle Blinking_002.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle Blinking/Right - Idle Blinking_003.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle Blinking/Right - Idle Blinking_004.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle Blinking/Right - Idle Blinking_005.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle Blinking/Right - Idle Blinking_006.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle Blinking/Right - Idle Blinking_007.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle Blinking/Right - Idle Blinking_008.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle Blinking/Right - Idle Blinking_009.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle Blinking/Right - Idle Blinking_010.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle Blinking/Right - Idle Blinking_011.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle/Right - Idle_000.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle/Right - Idle_001.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle/Right - Idle_002.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle/Right - Idle_003.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle/Right - Idle_004.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle/Right - Idle_005.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle/Right - Idle_006.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle/Right - Idle_007.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle/Right - Idle_008.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle/Right - Idle_009.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle/Right - Idle_010.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Idle/Right - Idle_011.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Slashing/Right - Slashing_000.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Slashing/Right - Slashing_001.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Slashing/Right - Slashing_002.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Slashing/Right - Slashing_003.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Slashing/Right - Slashing_004.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Slashing/Right - Slashing_005.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Slashing/Right - Slashing_006.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Slashing/Right - Slashing_007.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Slashing/Right - Slashing_008.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Slashing/Right - Slashing_009.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Slashing/Right - Slashing_010.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Slashing/Right - Slashing_011.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Walking/Right - Walking_000.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Walking/Right - Walking_001.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Walking/Right - Walking_002.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Walking/Right - Walking_003.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Walking/Right - Walking_004.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Walking/Right - Walking_005.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Walking/Right - Walking_006.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Walking/Right - Walking_007.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Walking/Right - Walking_008.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Walking/Right - Walking_009.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Walking/Right - Walking_010.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Walking/Right - Walking_011.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Walking/Right - Walking_012.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Walking/Right - Walking_013.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Walking/Right - Walking_014.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Walking/Right - Walking_015.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Walking/Right - Walking_016.png</key>
+            <key type="filename">../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128/Right - Walking/Right - Walking_017.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>110,100,220,200</rect>
+                <rect>32,32,64,64</rect>
                 <key>scale9Paddings</key>
-                <rect>110,100,220,200</rect>
+                <rect>32,32,64,64</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
         </map>
         <key>fileList</key>
         <array>
-            <filename>../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/Archer Character Pack/PNG/Archer 02/PNG Sequences</filename>
+            <filename>../../../../../../wamp64/www/pygame/_GAMES ASSETS/graphics/2dgameartbundle_windows/2dgameartbundle/4 Directional Ninja/PNG/PNG Sequences/128x128</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>

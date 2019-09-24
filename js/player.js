@@ -5,44 +5,69 @@ export default class Player {
     sprite = null;
     cursors = null;
 
-    preload() {
-        this.scene.load.atlas("atlas", "https://www.mikewesthad.com/phaser-3-tilemap-blog-posts/post-1/assets/atlas/atlas.png", "https://www.mikewesthad.com/phaser-3-tilemap-blog-posts/post-1/assets/atlas/atlas.json");
-    }
-
     constructor(scene, x, y) {
         this.scene = scene;
 
 
         this.sprite = scene.physics.add
-            .sprite(x, y, "atlas", "misa-front")
-            .setSize(30, 40)
-            .setOffset(0, 24);
+            .sprite(x, y, "archer2", "Front - Idle/Front - Idle_000")
+            .setSize(60, 80)
+            .setOffset(30, 20);
 
         let anims = scene.anims;
         anims.create({
-            key: "misa-left-walk",
-            frames: anims.generateFrameNames("atlas", { prefix: "misa-left-walk.", start: 0, end: 3, zeroPad: 3 }),
+            key: "IdleBottom",
+            frames: anims.generateFrameNames("archer2", { prefix: "Front - Idle/Front - Idle_", start: 0, end: 11, zeroPad: 3 }),
             frameRate: 10,
             repeat: -1
         });
         anims.create({
-            key: "misa-right-walk",
-            frames: anims.generateFrameNames("atlas", { prefix: "misa-right-walk.", start: 0, end: 3, zeroPad: 3 }),
+            key: "WalkBottom",
+            frames: anims.generateFrameNames("archer2", { prefix: "Front - Walking/Front - Walking_", start: 0, end: 17, zeroPad: 3 }),
+            frameRate: 10,
+            repeat: -1
+        });
+
+        anims.create({
+            key: "IdleLeft",
+            frames: anims.generateFrameNames("archer2", { prefix: "Left - Idle/Left - Idle_", start: 0, end: 11, zeroPad: 3 }),
             frameRate: 10,
             repeat: -1
         });
         anims.create({
-            key: "misa-front-walk",
-            frames: anims.generateFrameNames("atlas", { prefix: "misa-front-walk.", start: 0, end: 3, zeroPad: 3 }),
+            key: "WalkLeft",
+            frames: anims.generateFrameNames("archer2", { prefix: "Left - Walking/Left - Walking_", start: 0, end: 17, zeroPad: 3}),
+            frameRate: 10,
+            repeat: -1
+        });
+
+        anims.create({
+            key: "IdleRight",
+            frames: anims.generateFrameNames("archer2", { prefix: "Right - Idle/Right - Idle_", start: 0, end: 11, zeroPad: 3 }),
             frameRate: 10,
             repeat: -1
         });
         anims.create({
-            key: "misa-back-walk",
-            frames: anims.generateFrameNames("atlas", { prefix: "misa-back-walk.", start: 0, end: 3, zeroPad: 3 }),
+            key: "WalkRight",
+            frames: anims.generateFrameNames("archer2", { prefix: "Right - Walking/Right - Walking_", start: 0, end: 17, zeroPad: 3 }),
             frameRate: 10,
             repeat: -1
         });
+
+
+        anims.create({
+            key: "IdleTop",
+            frames: anims.generateFrameNames("archer2", { prefix: "Back - Idle/Back - Idle_", start: 0, end: 11, zeroPad: 3 }),
+            frameRate: 10,
+            repeat: -1
+        });
+        anims.create({
+            key: "WalkTop",
+            frames: anims.generateFrameNames("archer2", { prefix: "Back - Walking/Back - Walking_", start: 0, end: 17, zeroPad: 3 }),
+            frameRate: 10,
+            repeat: -1
+        });
+
         this.cursors = this.scene.input.keyboard.createCursorKeys();
     }
 
@@ -70,21 +95,19 @@ export default class Player {
 
         // Update the animation last and give left/right animations precedence over up/down animations
         if (this.cursors.left.isDown) {
-            this.sprite.anims.play("misa-left-walk", true);
+            this.sprite.anims.play("WalkLeft", true);
         } else if (this.cursors.right.isDown) {
-            this.sprite.anims.play("misa-right-walk", true);
+            this.sprite.anims.play("WalkRight", true);
         } else if (this.cursors.up.isDown) {
-            this.sprite.anims.play("misa-back-walk", true);
+            this.sprite.anims.play("WalkTop", true);
         } else if (this.cursors.down.isDown) {
-            this.sprite.anims.play("misa-front-walk", true);
+            this.sprite.anims.play("WalkBottom", true);
         } else {
-            this.sprite.anims.stop();
-
             // If we were moving, pick and idle frame to use
-            if (prevVelocity.x < 0) this.sprite.setTexture("atlas", "misa-left");
-            else if (prevVelocity.x > 0) this.sprite.setTexture("atlas", "misa-right");
-            else if (prevVelocity.y < 0) this.sprite.setTexture("atlas", "misa-back");
-            else if (prevVelocity.y > 0) this.sprite.setTexture("atlas", "misa-front");
+            if (prevVelocity.x < 0) this.sprite.anims.play("IdleLeft", true);
+            else if (prevVelocity.x > 0) this.sprite.anims.play("IdleRight", true);
+            else if (prevVelocity.y < 0) this.sprite.anims.play("IdleTop", true);
+            else if (prevVelocity.y > 0) this.sprite.anims.play("IdleBottom", true);
         }
     }
 
