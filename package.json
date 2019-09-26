@@ -1,0 +1,22 @@
+{
+  "name": "phaser3",
+  "version": "1.0.0",
+  "description": "phaser",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Proglab/phaser3.git"
+  },
+  "author": "Fabrice Gyre",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Proglab/phaser3/issues"
+  },
+  "homepage": "https://github.com/Proglab/phaser3#readme",
+  "dependencies": {
+    "phaser": "^3.19.0"
+  }
+}

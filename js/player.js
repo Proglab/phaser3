@@ -1,4 +1,4 @@
-import "./phaser.js";
+import "../node_modules/phaser/dist/phaser.min.js";
 
 export default class Player {
     scene = null;
@@ -29,7 +29,7 @@ export default class Player {
         anims.create({
             key: "WalkBottom",
             frames: anims.generateFrameNames("archer2", { prefix: "Front - Walking/Front - Walking_", start: 0, end: 17, zeroPad: 3 }),
-            frameRate: 10,
+            frameRate: 60,
             repeat: -1
         });
         anims.create({
@@ -51,7 +51,7 @@ export default class Player {
         anims.create({
             key: "WalkLeft",
             frames: anims.generateFrameNames("archer2", { prefix: "Left - Walking/Left - Walking_", start: 0, end: 17, zeroPad: 3}),
-            frameRate: 10,
+            frameRate: 60,
             repeat: -1
         });
         anims.create({
@@ -74,7 +74,7 @@ export default class Player {
         anims.create({
             key: "WalkRight",
             frames: anims.generateFrameNames("archer2", { prefix: "Right - Walking/Right - Walking_", start: 0, end: 17, zeroPad: 3 }),
-            frameRate: 10,
+            frameRate: 60,
             repeat: -1
         });
         anims.create({
@@ -96,7 +96,7 @@ export default class Player {
         anims.create({
             key: "WalkTop",
             frames: anims.generateFrameNames("archer2", { prefix: "Back - Walking/Back - Walking_", start: 0, end: 17, zeroPad: 3 }),
-            frameRate: 10,
+            frameRate: 60,
             repeat: -1
         });
         anims.create({
