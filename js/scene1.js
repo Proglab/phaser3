@@ -24,21 +24,23 @@ export default class PlatformerScene extends Phaser.Scene {
         this.solLayer = map.createDynamicLayer("objetsonsol", tileset, 0, 0);
         this.lightsLayer = map.createDynamicLayer("lights", tileset, 0, 0);
 
-        const debugGraphics = this.add.graphics().setAlpha(0.75);
         this.generalLayer.setCollisionByProperty({ collides: "1" });
         this.solLayer.setCollisionByProperty({ collides: "1" });
+        if (debug == true)
+        {
+            const debugGraphics = this.add.graphics().setAlpha(0.75);
+            this.generalLayer.renderDebug(debugGraphics, {
+                tileColor: null, // Color of non-colliding tiles
+                collidingTileColor: new Phaser.Display.Color(243, 134, 48, 255), // Color of colliding tiles
+                faceColor: new Phaser.Display.Color(40, 39, 37, 255) // Color of colliding face edges
+            });
 
-        this.generalLayer.renderDebug(debugGraphics, {
-            tileColor: null, // Color of non-colliding tiles
-            collidingTileColor: new Phaser.Display.Color(243, 134, 48, 255), // Color of colliding tiles
-            faceColor: new Phaser.Display.Color(40, 39, 37, 255) // Color of colliding face edges
-        });
-
-        this.solLayer.renderDebug(debugGraphics, {
-            tileColor: null, // Color of non-colliding tiles
-            collidingTileColor: new Phaser.Display.Color(243, 134, 48, 255), // Color of colliding tiles
-            faceColor: new Phaser.Display.Color(40, 39, 37, 255) // Color of colliding face edges
-        });
+            this.solLayer.renderDebug(debugGraphics, {
+                tileColor: null, // Color of non-colliding tiles
+                collidingTileColor: new Phaser.Display.Color(243, 134, 48, 255), // Color of colliding tiles
+                faceColor: new Phaser.Display.Color(40, 39, 37, 255) // Color of colliding face edges
+            });
+        }
 
         const spawnPoint = map.findObject(
             "Objects",
