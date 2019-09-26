@@ -130,13 +130,10 @@ export default class Player {
 
         // Normalize and scale the velocity so that player can't move faster along a diagonal
         this.sprite.body.velocity.normalize().scale(speed);
-
+        if (prevVelocity.y < 0) this.orientation = 'Top';
+        else if (prevVelocity.y > 0) this.orientation = 'Bottom';
         if (prevVelocity.x < 0) this.orientation = 'Left';
         else if (prevVelocity.x > 0) this.orientation = 'Right';
-        else if (prevVelocity.y < 0) this.orientation = 'Top';
-        else if (prevVelocity.y > 0) this.orientation = 'Bottom';
-
-
 
         // Update the animation last and give left/right animations precedence over up/down animations
         if (this.cursors.space.isDown)
